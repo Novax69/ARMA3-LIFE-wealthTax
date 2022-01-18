@@ -1,0 +1,17 @@
+<!--
+
+    Taxes translation, make a pull request if you want to translate in your own language
+
+-->
+        <Key ID="STR_NOV_Taxes_InfoNotif">
+            <Original>Your taxes !</Original>
+            <French>Votre relevé d'imposition !</French>
+        </Key> 
+        <Key ID="STR_NOV_Taxes_YouGotTaxed">
+            <Original>You got taxed %1%2, %3$ has been taken from your bank account !</Original>
+            <French>Vous avez été imposé à %1%2, %3€ ont été prélevées sur votre compte !</French>
+        </Key> 
+        <Key ID="STR_NOV_Taxes_NoTaxes">
+            <Original>You don't have enough to be taxed !</Original>
+            <French>Vous n'avez pas suffisament en banque pour être imposable !</French>
+        </Key> 
