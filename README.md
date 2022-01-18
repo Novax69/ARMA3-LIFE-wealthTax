@@ -5,6 +5,15 @@ Add a wealth tax on players, compatible with LIVRETA and BankFaction from my rep
 Crée un impôt sur la fortune.
 Compatible avec le script de [Livret A](https://github.com/Novax69/ARMA3-LIFE-Pack-Loan-LivretA)
 
+### Donation :
+
+Vous pouvez aider en faisant un don pour m'inciter à en coder plus à l'avenir :
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/novax69)
+
 ## EN 
 Make a wealth tax.
 Compatible with ["Livret A"](https://github.com/Novax69/ARMA3-LIFE-Pack-Loan-LivretA) script.
+
+### Support :
+
+You can help by donating so that i can make more in the future : [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/novax69)
