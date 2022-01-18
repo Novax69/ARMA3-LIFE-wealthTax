@@ -6,7 +6,7 @@
 	Date : 18/01/2022
 
     Description: 
-		Collect taxes from Bank Account + Livret A (if used)
+		Collect taxes from Bank Account + Livret A (if used) + BankFaction (if used)
 
 */
 
@@ -49,10 +49,13 @@ while { true } do {
 
 				if(_useFactionBank isEqualTo 1 && _valueTaxed != 0) then {
 					_ammountForFac = round(_valueTaxed / 2);
-					// Ajout cash independant
 					INDEBANK = INDEBANK + _ammountForFac;
-					// Ajout cash blufor
 					BLUBANK = BLUBANK + _ammountForFac;
+					publicVariable "blufor_cash";
+					publicVariable "inde_cash";
+					[0,BLUBANK] remoteExecCall ["NOVDB_fnc_updateFac",RSERV];
+					[1,INDEBANK] remoteExecCall ["NOVDB_fnc_updateFac",RSERV];
+
 				};
 			};
 		} else {
@@ -65,10 +68,12 @@ while { true } do {
 					} else { BANK = BANK - _valueTaxed; };
 					if(_useFactionBank isEqualTo 1 && _valueTaxed != 0) then {
 						_ammountForFac = round(_valueTaxed / 2);
-						// Ajout cash independant
 						INDEBANK = INDEBANK + _ammountForFac;
-						// Ajout cash blufor
-						BLUBANK = BLUBANK + _ammountForFac;					
+						BLUBANK = BLUBANK + _ammountForFac;
+						publicVariable "blufor_cash";
+						publicVariable "inde_cash";
+						[0,BLUBANK] remoteExecCall ["NOVDB_fnc_updateFac",RSERV];
+						[1,INDEBANK] remoteExecCall ["NOVDB_fnc_updateFac",RSERV];		
 					};
 				};
 			};
